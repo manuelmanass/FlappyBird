@@ -35,11 +35,11 @@ export default class ManuelController {
     }
     else if(nextPipe && !jumped){
 
-      if(!nextPipe.isTop &&birdData.x > nextPipe.x - 140 && birdData.x< nextPipe.x + nextPipe.pipeWidth && !jumped && scene.height - birdData.y > 50){
+      if(!nextPipe.isTop &&birdData.x > nextPipe.x - 120 && birdData.x< nextPipe.x + nextPipe.pipeWidth ){
       
            this.jump(1);
            jumped = true;
-            console.log("Salto grande");
+          console.log("Salto grande");
 
         }else{
           console.log("No salto");
